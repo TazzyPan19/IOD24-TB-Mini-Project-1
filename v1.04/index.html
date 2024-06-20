@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funny Birdies - Home</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/birdlogo-nobg-01a.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/fetchName.js" rel="text/javascript"></script>
+  </head>
+  <body>
+
+    <!-- NOTE - Card layout template -->
+    <template id="template-name">
+      <div class="card-body">
+        <p class="card-title text-ctr clr-dark-grn jua-regular-26"></p>
+        <p class="card-title-sci text-ctr clr-midtone-grn jua-regular-16"></p>  
+        <img class="card-img text-ctr" src="" alt="">
+        <div> 
+          <p class="card-location-t clr-dark-grn kanit-medium-16">Observation Location</p>
+          <p class="card-location clr-midtone-grn kanit-regular-16"></p>
+        </div>
+        <div>
+          <p class="card-date-t clr-dark-grn kanit-medium-16">Observation Date</p>
+          <p class="card-date clr-midtone-grn kanit-regular-16"></p>
+        </div>
+      </div>
+    </template>
+    
+    <!-- NOTE - Content -->
+    <section class="body-styling clr-dark-grn">
+    <div class="flex-sty flex-narrow back-clr-white">
+      <div class="nav-justify back-clr-white-new">
+        <a href="index.html">
+          <img class="logo-shaker img-shrink" src="assets/birdlogo-wh-01a.png" alt="logo-link">
+        </a>
+      </div>
+      <ul class="nav-body jua-regular-20">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="daily-birds.html">Daily Bird</a></li>
+        <li><a href="bird-chart.html">Population Bird Chart</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <h1 class="h1-title jua-regular-40">Welcome to Funny Birdies!</h1>
+    <div class="content-body">
+      <div class="test-api-2">
+        <div id="name-list" class="flex-sty" style="flex-wrap: wrap; justify-content: center;">
+          <!-- <div class="card-body">
+            <p class="card-title text-ctr clr-dark-grn jua-regular-26">Northern Fantail</p>
+            <p class="card-title-sci text-ctr clr-midtone-grn jua-regular-16">Rhipidura rufiventris</p>  
+            <img class="card-img text-ctr" src="assets/bird-1.jpg" alt="no-bird">
+            <div> 
+              <p class="card-location-t clr-dark-grn kanit-medium-16">Observation Location</p>
+              <p class="card-location clr-midtone-grn kanit-regular-16">Yard List, Ashgrove</p>
+            </div>
+            <div>
+              <p class="card-date-t clr-dark-grn kanit-medium-16">Observation Date</p>
+              <p class="card-date clr-midtone-grn kanit-regular-16">2024-06-12 18:36</p>
+            </div>
+          </div> -->
+        </div>
+        <div class="flex-m">
+          <button class="btn-style-2 jua-regular-16 clr-dark-grn text-ctr" 
+            onclick="fetchBirdData()">Next Random Bird ></button>
+        </div>
+      </div>
+    </div>
+      <footer class="jua-regular-20">
+        <div class="footer-flex">
+          <div class="footer-flex-1">
+            <div class="footer-links-bd ">
+              <ul class="footer-links-space">
+                <li><a class="" href="#">Home</a></li>
+                <li><a class="" href="about.html">About</a></li>
+                <li><a class="" href="daily-birds.html">Daily Bird</a></li>
+                <li><a class="" href="bird-chart.html">Population Bird Chart</a></li>
+                <li><a class="" href="contact.html">Contact Us</a></li>
+                <li><a class="" href="sitemap.html">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="footer-copyright">Authorized to use eBird API data for educational purposes 2024. 
+              All rights reserved by Funny Birdies 2024.
+            </div>
+          </div>
+          <div class="footer-flex-2">
+            <img class="img-shrink-2" src="assets/birdlogo-sil2.png" alt="">
+          </div>
+      </div>
+      </footer>  
+    </section>
+    <script type="text/javascript"></script>
+  </body>
+</html>

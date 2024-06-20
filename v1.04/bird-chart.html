@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funny Birdies - Bird Chart</title>
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/birdlogo-nobg-01a.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.5.0/dist/echarts.min.js"></script>
+    <script src="" rel="text/javascript"></script>
+  </head>
+  <body>
+    
+    <!-- NOTE - Content -->
+    <section class="body-styling clr-dark-grn">
+    <div class="flex-sty flex-narrow back-clr-white">
+      <div class="nav-justify back-clr-white-new">
+        <a href="index.html">
+          <img class="logo-shaker img-shrink" src="assets/birdlogo-wh-01a.png" alt="logo-link">
+        </a>
+      </div>
+      <ul class="nav-body jua-regular-20">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="daily-birds.html">Daily Bird</a></li>
+        <li><a href="#">Population Bird Chart</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <h1 class="h1-title jua-regular-40 clr-dark-grn">Bird Population eChart</h1>
+    <div class="content-body">
+      <div class="test-api">
+        <p style="padding: 20px 20px 20px 20px;" class="text-ctr kanit-regular-20">This pie chart displays the population of each bird species from each observation within the last 24 hours. </p>
+        <div>
+          <div style="display: flex; flex-wrap: wrap; justify-content: center;" id="chart-list">
+            <div id="main" class="chart-sty"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <footer class="jua-regular-20">
+        <div class="footer-flex">
+          <div class="footer-flex-1">
+            <div class="footer-links-bd ">
+              <ul class="footer-links-space">
+                <li><a class="" href="index.html">Home</a></li>
+                <li><a class="" href="about.html">About</a></li>
+                <li><a class="" href="daily-birds.html">Daily Bird</a></li>
+                <li><a class="" href="#">Population Bird Chart</a></li>
+                <li><a class="" href="contact.html">Contact Us</a></li>
+                <li><a class="" href="sitemap.html">Sitemap</a></li>
+              </ul>
+            </div>
+            <div class="footer-copyright">Authorized to use eBird API data for educational purposes 2024. 
+              All rights reserved by Funny Birdies 2024.
+            </div>
+          </div>
+          <div class="footer-flex-2">
+            <img class="img-shrink-2" src="assets/birdlogo-sil2.png" alt="">
+          </div>
+      </div>
+      </footer>  
+    </section>
+    <script src="scripts/fetchChart.js" type="text/javascript"></script>
+  </body>
+</html>
